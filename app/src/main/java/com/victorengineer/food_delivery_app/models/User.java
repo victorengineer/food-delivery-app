@@ -1,0 +1,105 @@
+package com.victorengineer.food_delivery_app.models;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class User implements Parcelable{
+
+    private String email;
+    private String user_id;
+    private String username;
+    private int user_type;
+
+
+    public User(String email, String user_id, String username, int user_type) {
+        this.email = email;
+        this.user_id = user_id;
+        this.username = username;
+        this.user_type = user_type;
+    }
+
+    public User() {
+
+    }
+
+    protected User(Parcel in) {
+        email = in.readString();
+        user_id = in.readString();
+        username = in.readString();
+        user_type = in.readInt();
+    }
+
+    public static final Creator<User> CREATOR = new Creator<User>() {
+        @Override
+        public User createFromParcel(Parcel in) {
+            return new User(in);
+        }
+
+        @Override
+        public User[] newArray(int size) {
+            return new User[size];
+        }
+    };
+
+
+
+    public static Creator<User> getCREATOR() {
+        return CREATOR;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getUser_id() {
+        return user_id;
+    }
+
+    public void setUser_id(String user_id) {
+        this.user_id = user_id;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public int getUser_type() {
+        return user_type;
+    }
+
+    public void setUser_type(int user_type) {
+        this.user_type = user_type;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "email='" + email + '\'' +
+                ", user_id='" + user_id + '\'' +
+                ", username='" + username + '\'' +
+                ", user_type='" + user_type + '\'' +
+                '}';
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(email);
+        dest.writeString(user_id);
+        dest.writeString(username);
+        dest.writeInt(user_type);
+    }
+}
+

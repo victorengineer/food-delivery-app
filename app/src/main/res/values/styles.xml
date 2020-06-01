@@ -1,0 +1,86 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/item_unpressed</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:actionBarStyle">@style/ActionBarStyle</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="ActionBarStyle" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="android:displayOptions">showHome|homeAsUp|showTitle</item>
+        <item name="android:titleTextStyle">@style/ActionBarTitleTextStyle</item>
+        <item name="android:background">@color/white</item>
+        <item name="displayOptions">showHome|homeAsUp|showTitle</item>
+        <item name="titleTextStyle">@style/ActionBarTitleTextStyle</item>
+        <item name="background">@color/white</item>
+        <item name="actionMenuTextColor">@color/white</item>
+
+    </style>
+
+    <style name="ActionBarTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="PrincipalLblTittle">
+        <item name="android:textColor">@color/blue2</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MyBottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconTint">@color/product_name_color</item>
+        <item name="itemTextColor">@color/product_name_color</item>
+        <item name="itemTextAppearanceActive">@style/MyBottomNavigationView.TextAppearance.Active</item>
+        <item name="itemTextAppearanceInactive">@style/MyBottomNavigationView.TextAppearance</item>
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="itemIconSize">40dp</item>
+    </style>
+
+    <style name="MyBottomNavigationView.TextAppearance" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">10sp</item>
+    </style>
+    <style name="MyBottomNavigationView.TextAppearance.Active" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="CustomNegativeButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="backgroundTint">@drawable/bg_btn_secondary</item>
+        <item name="android:textColor">@color/blue2</item>
+    </style>
+
+    <style name="CustomPositiveButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="backgroundTint">@drawable/bg_btn_primary</item>
+        <item name="android:textColor">@color/blue2</item>
+    </style>
+
+    <style name="SecondaryTextViewMedium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/secondaryText</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>

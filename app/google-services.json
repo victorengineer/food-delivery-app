@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "807987650029",
+    "firebase_url": "https://food-delivery-app-2b6e5.firebaseio.com",
+    "project_id": "food-delivery-app-2b6e5",
+    "storage_bucket": "food-delivery-app-2b6e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:807987650029:android:e3d7a367a7456035e31be4",
+        "android_client_info": {
+          "package_name": "com.victorengineer.food_delivery_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "807987650029-8s09p8vb8pm5drmvhmtd4crrk7igmeoj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnTAV2fhhalSmagFwmM-5OQZkihWg3ZbM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "807987650029-8s09p8vb8pm5drmvhmtd4crrk7igmeoj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
